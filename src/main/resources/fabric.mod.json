@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "spectatorcrosshair",
+  "version": "${version}",
+  "name": "SpectatorCrosshair",
+  "description": "Keep your crosshair and selected block visible whilst in spectator mode",
+  "authors": [
+    "Fruitloopins"
+  ],
+  "contact": {
+    "homepage": "https://fwloopins.com",
+    "sources": "https://github.com/Fruitloopins/SpectatorCrosshair",
+    "issues": "https://github.com/Fruitloopins/SpectatorCrosshair/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/spectatorcrosshair/icon.png",
+  "environment": "client",
+  "mixins": [
+    "spectatorcrosshair.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Discord": "https://discord.gg/ey6ZvnwAJp",
+        "Donate": "https://github.com/sponsors/Fruitloopins"
+      }
+    }
+  }
+}
