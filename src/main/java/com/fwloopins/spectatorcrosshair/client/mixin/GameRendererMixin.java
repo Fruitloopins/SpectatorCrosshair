@@ -16,7 +16,10 @@ public class GameRendererMixin {
 
     @Inject(method = "shouldRenderBlockOutline", at = @At("HEAD"), cancellable = true)
     private void onShouldRenderBlockOutline(CallbackInfoReturnable<Boolean> cir) {
-        if (client.interactionManager != null && client.interactionManager.getCurrentGameMode() == GameMode.SPECTATOR && !client.options.hudHidden)
-            cir.setReturnValue(true);
+        if (client.player != null && client.world != null && client.world.getBlockState(client.player.getBlockPos().add(0, 1, 0)).isAir()) {
+            if (client.interactionManager != null && client.interactionManager.getCurrentGameMode() == GameMode.SPECTATOR && !client.options.hudHidden) {
+                cir.setReturnValue(true);
+            }
+        }
     }
 }

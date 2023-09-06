@@ -10,4 +10,4 @@ I made this as a result of my frustation when attempting to be precise with the 
 I have opted to keep the behaviour of crosshair and block outline rendering effectively the same as if you were in the survival gamemode, this means that:
 
 - The crosshair will not render if you are in third person mode
-- Block outlines will not render if the HUD is hidden such as through pressing F1
+- Block outlines will not render if the HUD is hidden such as through pressing F1, or if the player is currently inside a block
