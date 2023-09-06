@@ -5,6 +5,8 @@
 
 SpectatorCrosshair is a very simple Fabric mod that modifies the game so that while in spectator the crosshair will remain visible at most times, and that selected blocks will retain their outline under normal conditions.
 
+I made this as a result of my frustation when attempting to be precise with the block I want to inspect using CoreProtect.
+
 I have opted to keep the behaviour of crosshair and block outline rendering effectively the same as if you were in the survival gamemode, this means that:
 
 - The crosshair will not render if you are in third person mode
